@@ -1,0 +1,24 @@
+Grid: Input15 Sort: Insertion Total Time: 207.331
+Grid: Input15 Sort: Merge Total Time: 0.4053
+Grid: Input15 Sort: Quick Total Time: 0.235106
+Grid: Input15 Sort: Heap Total Time: 0.321796
+Grid: Input15 Sort: Hash Table Total Time: 0.054465
+Grid: Input30 Sort: Insertion Total Time: 213.892
+Grid: Input30 Sort: Merge Total Time: 0.54263
+Grid: Input30 Sort: Quick Total Time: 0.375593
+Grid: Input30 Sort: Heap Total Time: 0.446721
+Grid: Input30 Sort: Hash Table Total Time: 0.082627
+Grid: Input50 Sort: Insertion Total Time: 210.226
+Grid: Input50 Sort: Merge Total Time: 0.782005
+Grid: Input50 Sort: Quick Total Time: 0.639222
+Grid: Input50 Sort: Heap Total Time: 0.736649
+Grid: Input50 Sort: Hash Table Total Time: 0.15768
+Grid: Input250 Sort: Insertion Total Time: 202.79
+Grid: Input250 Sort: Merge Total Time: 11.3647
+Grid: Input250 Sort: Quick Total Time: 11.0264
+Grid: Input250 Sort: Heap Total Time: 11.1283
+Grid: Input250 Sort: Hash Table Total Time: 2.92188
+
+Analysis:
+
+Using a hash table produced the fastest overall time, as the word list does not have to be sorted before being entered into the hash table. A hash table allows direct access, which saves considerable time when compared to binary search, as long as there are not an exorbitant number of collisions. Quick Sort, Merge Sort and Heap Sort all produce generally the same sort speeds, as they all operate in O(nlgn) time. Insertion sort is by far the slowest, as it operates in O(n^2) time, iterating over every element in the list twice.
